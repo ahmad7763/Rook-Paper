@@ -1,0 +1,147 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: #70A0AF;
+}
+
+h1 {
+  background-color: darkslateblue;
+  color: #fff;
+  height: 5rem;
+  /* width: 100vw; */
+  line-height: 5rem;
+  text-align: center;
+
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  margin-top: 1rem;
+  height: 31vh;
+  width: 15.5vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: blueviolet;
+  gap: 15%;
+}
+
+.choice:hover {
+  background-color: black;
+  cursor: pointer;
+  box-shadow: rbga(55, 55, 43, 0.9);
+}
+
+img {
+  height: 30vh;
+  width: 15vw;
+  object-fit: cover;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#msg {
+
+  display: inline;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  background-color: black;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#reset {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #331E38;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+}
+
+#reset:hover {
+  background-color: #70A0AF;
+}
+
+
+@media screen and (max-width: 768px) {
+  .choice {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  img {
+    width: 28vw;
+    height: 28vw;
+  }
+
+  h1 {
+    font-size: 3vh;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+  }
+
+  #msg {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  #reset {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* For screens larger than 1200px (large desktops) */
+@media screen and (min-width: 1200px) {
+  .choice {
+    width: 15vw;
+    height: 15vw;
+
+  }
+
+  img {
+    width: 13vw;
+    height: 13vw;
+  }
+}
